@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PETITORIO MÍNIMO FARMA JOVI SPA AL 19-02-2026</title>
+<title>Petitorio mínimo referencial | Proyecto FarmaJovi</title>
 <style>
   :root{
     --bg:#0b0c10;
@@ -81,18 +81,83 @@
     padding:0 0.15em;
     border-radius:0.15em;
   }
+  .project-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-bottom:1rem;
+  }
+  .project-copy{
+    max-width:760px;
+  }
+  .project-copy h1{
+    margin-bottom:0.35rem;
+  }
+  .project-subtitle{
+    margin:0;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .whatsapp-button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:0.7rem 1rem;
+    border-radius:999px;
+    background:var(--accent);
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  .whatsapp-button:hover{
+    filter:brightness(1.08);
+  }
+  .project-note{
+    margin:0 0 1rem;
+    padding:0.8rem 1rem;
+    border:1px solid var(--neutral);
+    border-left:4px solid var(--accent);
+    border-radius:0.4rem;
+    background:var(--card2);
+    color:var(--muted);
+    line-height:1.5;
+  }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="card">
-    <h1>PETITORIO MÍNIMO FARMA JOVI SPA AL 19-02-2026</h1>
+    <div class="project-header">
+      <div class="project-copy">
+        <h1>Petitorio mínimo referencial | Proyecto FarmaJovi</h1>
+        <p class="project-subtitle">
+          Registro de principios activos, formas farmacéuticas, dosis y antecedentes documentales considerados para la planificación del proyecto.
+        </p>
+      </div>
+
+      <a
+        class="whatsapp-button"
+        href="https://wa.me/56942748056"
+        target="_blank"
+        rel="noopener noreferrer">
+        📲 WhatsApp +56 9 4274 8056
+      </a>
+    </div>
+
+    <div class="project-note">
+      Este contenido corresponde a una referencia documental con fecha 19 de febrero de 2026.
+      Los valores de stock reflejan el registro incorporado en esa fecha y no representan disponibilidad comercial actual.
+    </div>
+
     <div class="search-bar">
       <input id="search" type="text" class="search-input" placeholder="Buscar producto, principio activo, dosis..." />
       <select id="stockFilter" class="select-filter">
         <option value="todos">Todos</option>
-        <option value="con">Con stock</option>
-        <option value="sin">Sin stock</option>
+        <option value="con">Con stock registrado</option>
+        <option value="sin">Sin stock registrado</option>
       </select>
     </div>
     <div id="summary" style="margin-bottom:0.5rem;font-size:0.9rem;color:var(--muted);"></div>
@@ -104,7 +169,7 @@
             <th>Principio Activo</th>
             <th>Forma</th>
             <th>Dosis</th>
-            <th>Stock</th>
+            <th>Stock registrado</th>
             <th>Carta 1</th>
             <th>Carta 2</th>
             <th>O/C</th>
